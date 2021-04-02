@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Zum Baeren: Cafe and bakery</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/logo.png"
+          class="nav__logo"
+          id="logo"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Ingredients</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Team</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">About</a>
+          </li>
+          <li class="nav__item">
+            <!-- default behaviour of # that the page will jump to the top -->
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          We
+          <!-- highlight effect -->
+          <span class="highlight">brew coffee</span>
+          and<br/>
+          <span class="highlight">bake pies</span> with love
+        </h1>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img
+          src="img/smallpics.png"
+          class="header__img"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Ingredients</h2>
+        <h3 class="section__header">
+          We use finest ingredients and fair trade beans for the best taste ever
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/beans.jpg"
+          data-src="img/beans.jpg"
+          class="features__img"
+        />
+        <div class="features__feature">
+          <h5 class="features__header">We love coffee</h5>
+          <p>
+            Coffee is one of the world’s most popular beverages. Thanks to its high levels of antioxidants and beneficial nutrients, it also seems to be quite healthy.
+            But we just love it for it's taste.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <h5 class="features__header">We go organic</h5>
+          <p>
+           We care what we eat and we use organic ingredients, not only for taste, but also for the environment. We love it fresh, bio and healthy. 
+          </p>
+        </div>
+        <img
+          src="img/apfel.jpg"
+          data-src="img/apfel.jpg"
+          class="features__img"
+        />
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Team</h2>
+        <h3 class="section__header">
+        It's all about people
+        </h3>
+      </div>
+
+      <div class="team">
+        <div class="team__tab-container">
+          <button
+            class="btn team__tab team__tab--1 team__tab--active"
+            data-tab="1"
+          >Irma
+          </button>
+          <button class="btn team__tab team__tab--2" data-tab="2">
+           Chef 
+          </button>
+          <button class="btn team__tab team__tab--3" data-tab="3">
+           Maxi
+          </button>
+        </div>
+        <div
+          class="team__content team__content--1 team__content--active"
+        >
+          <div class="team__icon team__icon--1">
+            <svg>
+            </svg>
+          </div>
+          <h5 class="team__header">
+            Irma is a barista and AST trainer
+          </h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <div class="team__content team__content--2">
+          <div class="team__icon team__icon--2">
+            <svg>
+            </svg>
+          </div>
+          <h5 class="team__header">
+            Chef makes best cheescakes in town
+          </h5>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+        <div class="team__content team__content--3">
+          <div class="team__icon team__icon--3">
+            <svg>
+            </svg>
+          </div>
+          <h5 class="team__header">
+            Maxi specializes in coffee with alcohol
+          </h5>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">About</h2>
+        <h3 class="section__header">
+          Pictures worth a thousand words, right?
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide"><img src="img/img-1.jpg" alt="Photo 1" /></div>
+        <div class="slide"><img src="img/img-2.jpg" alt="Photo 2" /></div>
+        <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
+        <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit!
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Lorem ipsum!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Cafe</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Bakery</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Learn</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="img/icon.png" alt="Logo" class="footer__logo" />
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Lorem ipsum dolor<br />
+        lorem <span class="highlight">lorem upsum</span>
+      </h2>
+      <form class="modal__form">
+        <label>First name</label>
+        <input type="text" />
+        <label>Last name</label>
+        <input type="text" />
+        <label>E-mail</label>
+        <input type="email" />
+        <button class="btn">Lorem&rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
