@@ -172,6 +172,7 @@ img {
 }
 
 .header__title {
+  margin-top: 8%;
   flex: 1;
   max-width: 115rem;
   display: grid;
