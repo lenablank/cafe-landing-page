@@ -41,16 +41,6 @@ btnScrollTo.addEventListener('click', function (e) {
   section1.scrollIntoView({ behavior: 'smooth' });
 });
 
-// page navigation, el = element, e = event
-// this is not the best solution:
-// document.querySelectorAll('.nav__link').forEach(function (el) {
-//   el.addEventListener('click', function (e) {
-//     e.preventDefault();
-//     const id = this.getAttribute('href');
-//     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
-//   });
-// });
-
 //.nav__links is the common parent element of all links
 document.querySelector('.nav__links').addEventListener('click', function (e) {
   e.preventDefault();
@@ -82,48 +72,6 @@ tabsContainer.addEventListener('click', function (e) {
   // activate content area
   // dataset is a read-only property!
   document.querySelector(`.team__content--${clicked.dataset.tab}`).classList.add('team__content--active');
-});
-
-// menu fade animation
-const handleHover = function (e, opacity) {
-  if (e.target.classList.contains('nav__link')) {
-    const link = e.target;
-    const siblings = link.closest('.nav').querySelectorAll('.nav__link');
-    const logo = link.closest('.nav').querySelector('img');
-
-    siblings.forEach(el => {
-      if (el != link) el.style.opacity = opacity;
-    });
-    logo.style.opacity = opacity;
-  }
-}
-
-const nav = document.querySelector('.nav');
-
-nav.addEventListener('mouseover', function (e) {
-  if (e.target.classList.contains('nav__link')) {
-    const link = e.target;
-    const siblings = link.closest('.nav').querySelectorAll('.nav__link');
-    const logo = link.closest('.nav').querySelector('img');
-
-    siblings.forEach(el => {
-      if (el != link) el.style.opacity = 0.5;
-    });
-    logo.style.opacity = 0.5;
-  }
-});
-
-nav.addEventListener('mouseout', function (e) {
-  if (e.target.classList.contains('nav__link')) {
-    const link = e.target;
-    const siblings = link.closest('.nav').querySelectorAll('.nav__link');
-    const logo = link.closest('.nav').querySelector('img');
-
-    siblings.forEach(el => {
-      if (el != link) el.style.opacity = 1;
-    });
-    logo.style.opacity = 1;
-  }
 });
 
 // reveal sections
