@@ -412,28 +412,6 @@ h4 {
   transform: translate(50%, -50%);
 }
 
-  /* only necessary when overlying images */
-  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
-}
-
-/* testimonials */
-.testimonial {
-  width: 65%;
-  position: relative;
-}
-
-.testimonial::before {
-  content: '\201C';
-  position: absolute;
-  top: -5.7rem;
-  left: -6.8rem;
-  line-height: 1;
-  font-size: 20rem;
-  font-family: inherit;
-  color: var(--color-primary);
-  z-index: -1;
-}
-
 .section__title--testimonials {
   margin-bottom: 4rem;
 }
